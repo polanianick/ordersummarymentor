@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+:root {
+    --primary-paleblue: hsl(225, 100%, 94%);
+    --primary-brightblue: hsl(245, 75%, 52%);
+    --neutral-paleblue: hsl(225, 100%, 98%);
+    --neutral-desaturatedblue: hsl(224, 23%, 55%);
+    --neutral-darkblue: hsl(223, 47%, 23%);
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: .9em;
+    line-height: 1.7em;
+    color: var(--neutral-desaturatedblue);
+}
+
+h1 {
+    font-weight: 900;
+    color: var(--neutral-darkblue);
+    font-size: 1.5em;
+}
+
+body {
+    background-image: url(file:///C:/Users/jhoan/OneDrive/Desktop/Nicolas/order-summary-component-main/images/pattern-background-desktop.svg);
+    background-position: 0 -25%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: var(--primary-paleblue);
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.container {
+    width: 25%;
+    margin: 5em auto;
+    background-color: white;
+    border-radius: 15px;
+    
+}
+
+.text {
+    padding: 2.5em;
+}
+
+.midtext{
+    padding: 1em;
+}
+
+.littlebox {
+    background-color: var(--neutral-paleblue);
+    margin-bottom: 2em;
+    border-radius: 15px;
+    align-items: center;
+    display:flex;
+    padding: 1em;
+
+}
+
+.littlebox a {
+    font-size: .85em;
+    text-decoration: underline;
+    font-weight: 700;      
+}
+
+.littlebox img {
+    width: 15%;
+    padding-right: 1em;
+    
+}
+
+.annual {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    text-align: left; 
+}
+
+.annual h1 {    
+    font-size: .9em;
+}
+
+.paymentbox {
+    background-color: var(--primary-brightblue);
+    border-radius: 10px;
+    margin-bottom: 1.5em;
+    padding: .7em;
+    box-shadow: 0 10px 13px var(--neutral-desaturatedblue);
+}
+
+.paymentbox a {
+    color: white;
+    font-size: .9em;
+    font-weight: 700;
+}
+
+#cancel {
+    color: var(--neutral-desaturatedblue);
+    font-weight: 900;
+    font-size: .8em;
+   
+}
+
+.attribution {
+    font-size: .7em;
+    color: var(--neutral-desaturatedblue);
+}
+
+@media (max-width: 400px){
+    .littlebox {
+        flex-direction: column;
+    }
+    .text {
+        padding: 1.2em;
+    }
+}
+
+@media (max-width: 1050px){
+    .container {
+        width: 80%;
+    }
+
+}
+
